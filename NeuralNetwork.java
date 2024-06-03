@@ -1,6 +1,5 @@
 import Activations.Activation;
 import Losses.*;
-import org.nd4j.common.util.MathUtils;
 
 
 import java.io.Serializable;
