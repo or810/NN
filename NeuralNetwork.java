@@ -82,8 +82,8 @@ public class NeuralNetwork implements Serializable {
             if (progress >= presentage + 1.0) { // Checking if progress increased by 1%
                 presentage = (int) progress;
                 System.out.println(totalError);
-                int roundedEpoch = (int) MathUtils.roundDouble((double) (epoch + 1), -1 * (int)(Math.log10(epoch) - 1));
-                String message = String.format("Epoch: %-15s Loss: %-15.2e Progress: %-3d%%", roundedEpoch, totalError, presentage);
+                //int roundedEpoch = (int) MathUtils.roundDouble((double) (epoch + 1), -1 * (int)(Math.log10(epoch) - 1));
+                String message = String.format("Epoch: %-15s Loss: %-15.2e Progress: %-3d%%", epoch, totalError, presentage);
                 System.out.println(message);
             }
         }
